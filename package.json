@@ -1,0 +1,28 @@
+{
+  "name": "portafolio-personal",
+  "version": "1.0.0",
+  "description": "Portafolio profesional - Analista de Sistemas Odoo",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "echo 'Build completado'"
+  },
+  "keywords": [
+    "portfolio",
+    "odoo",
+    "analyst",
+    "developer",
+    "express"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.18.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}

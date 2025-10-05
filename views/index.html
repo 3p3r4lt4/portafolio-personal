@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/">Portafolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link <%= page === 'home' ? 'active' : '' %>">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link <%= page === 'about' ? 'active' : '' %>">Sobre Mí</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/projects" class="nav-link <%= page === 'projects' ? 'active' : '' %>">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link <%= page === 'contact' ? 'active' : '' %>">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title"><%= user.name %></h1>
+                    <h2 class="hero-subtitle"><%= user.profession %></h2>
+                    <p class="hero-description"><%= user.tagline %></p>
+                    <div class="hero-buttons">
+                        <a href="/projects" class="btn btn-primary">Ver Proyectos</a>
+                        <a href="/contact" class="btn btn-secondary">Contactar</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Aquí puedes agregar tu foto -->
+                    <div class="placeholder-image">👨‍💻</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Servicios Especializados</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h3>Mantenimiento Odoo</h3>
+                        <p>Mantenimiento preventivo y correctivo de instancias Odoo en producción.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Desarrollo Personalizado</h3>
+                        <p>Desarrollo de módulos y funcionalidades específicas para tu negocio.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">☁️</div>
+                        <h3>Despliegue Cloud</h3>
+                        <p>Implementación en servidores cloud como Linode, DigitalOcean y AWS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 <%= user.name %>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
