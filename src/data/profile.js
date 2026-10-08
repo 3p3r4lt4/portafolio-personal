@@ -16,7 +16,7 @@ export const profile = {
   cv: '', // ej. '/cv-eduardo-peralta.pdf'
   contact: {
     email: 'eduardo7sistemas@gmail.com',
-    phone: '+51 925 219 103',
+    phone: '+51 935 219 103',
     whatsapp: '51925219103', // código de país + número, sin espacios ni '+'
     linkedin: 'https://www.linkedin.com/in/eduardo-peralta-quicaño-a53766b8',
     github: 'https://github.com/3p3r4lt4',
