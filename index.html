@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduardo Peralta | Analista de Sistemas & Desarrollador Odoo</title>
+    <meta name="description" content="Portafolio de Eduardo Peralta: análisis, desarrollo, mantenimiento y despliegue de sistemas ERP Odoo en Lima, Perú." />
+    <meta name="theme-color" content="#0b1120" />
+    <meta property="og:title" content="Eduardo Peralta | Desarrollador Odoo" />
+    <meta property="og:description" content="Análisis, desarrollo y despliegue de soluciones ERP Odoo." />
+    <meta property="og:type" content="website" />
+    <script>
+      // Aplica el tema guardado antes de renderizar (evita parpadeo)
+      try {
+        var t = localStorage.getItem('theme') ||
+          (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Formulario oculto para que Netlify Forms detecte el formulario de React en el build -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
