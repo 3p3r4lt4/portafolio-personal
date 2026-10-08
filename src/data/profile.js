@@ -12,13 +12,13 @@ export const profile = {
   location: 'Lima, Perú',
   available: true,
   // Coloca tu foto en /public (ej. /public/foto.jpg) y escribe '/foto.jpg'
-  photo: '',
+  photo: '/eduardo-peralta.jpg',
   cv: '', // ej. '/cv-eduardo-peralta.pdf'
   contact: {
-    email: 'tu.email@ejemplo.com', // TODO: reemplazar
-    phone: '+51 XXX XXX XXX', // TODO: reemplazar
-    whatsapp: '', // ej. '51999999999'
-    linkedin: 'https://www.linkedin.com/in/tu-usuario', // TODO: reemplazar
+    email: 'eduardo7sistemas@gmail.com',
+    phone: '+51 925 219 103',
+    whatsapp: '51925219103', // código de país + número, sin espacios ni '+'
+    linkedin: 'https://www.linkedin.com/in/eduardo-peralta-quicaño-a53766b8',
     github: 'https://github.com/3p3r4lt4',
   },
 };
@@ -31,7 +31,7 @@ export const about = {
   stats: [
     { value: '3+', label: 'Años de experiencia' },
     { value: '20+', label: 'Módulos desarrollados' },
-    { value: '10+', label: 'Implementaciones' },
+    { value: '3+', label: 'Implementaciones' },
     { value: '99%', label: 'Uptime en producción' },
   ],
 };
@@ -181,21 +181,21 @@ export const experience = [
   {
     period: '2023 — Actualidad',
     role: 'Analista de Sistemas Odoo',
-    company: 'Empresa actual', // TODO: reemplazar
+    company: 'Fiberlux Tech',
     description:
       'Análisis funcional, desarrollo de módulos y mantenimiento del ERP en producción. Despliegues en cloud y soporte a usuarios.',
   },
   {
     period: '2022 — 2023',
     role: 'Desarrollador Odoo',
-    company: 'Empresa anterior', // TODO: reemplazar
+    company: 'Redes Opticas Peru',
     description:
       'Desarrollo de funcionalidades a medida, integraciones con servicios externos y facturación electrónica.',
   },
   {
     period: '2021 — 2022',
     role: 'Soporte & QA',
-    company: 'Primer empleo', // TODO: reemplazar
+    company: 'Logistica Integral',
     description:
       'Pruebas funcionales, documentación técnica y capacitación de usuarios finales.',
   },

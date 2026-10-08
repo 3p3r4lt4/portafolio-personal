@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Linkedin, Github, Send, Loader2 } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github, Send, Loader2, MessageCircle } from 'lucide-react';
 import SectionHeader from './SectionHeader.jsx';
 import { profile } from '../data/profile.js';
 
@@ -38,6 +38,9 @@ export default function Contact() {
   const items = [
     { icon: Mail, label: 'Email', value: contact.email, href: `mailto:${contact.email}` },
     { icon: Phone, label: 'Teléfono', value: contact.phone, href: `tel:${contact.phone.replace(/\s/g, '')}` },
+    ...(contact.whatsapp
+      ? [{ icon: MessageCircle, label: 'WhatsApp', value: 'Escríbeme', href: `https://wa.me/${contact.whatsapp}` }]
+      : []),
     { icon: MapPin, label: 'Ubicación', value: profile.location },
     { icon: Linkedin, label: 'LinkedIn', value: 'Ver perfil', href: contact.linkedin },
     { icon: Github, label: 'GitHub', value: contact.github.replace('https://', ''), href: contact.github },

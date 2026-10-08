@@ -1,5 +1,5 @@
 import { ArrowRight, Download, Github, Linkedin, Mail, MapPin } from 'lucide-react';
-import { profile } from '../data/profile.js';
+import { profile, about } from '../data/profile.js';
 
 export default function Hero() {
   const { contact } = profile;
@@ -52,12 +52,29 @@ export default function Hero() {
         </div>
 
         <div className="hero-visual reveal">
-          <div className="avatar-ring">
-            {profile.photo ? (
-              <img src={profile.photo} alt={profile.name} className="avatar" />
-            ) : (
+          <div className="visual-wrap">
+          {profile.photo ? (
+            <div className="portrait">
+              <img
+                src={profile.photo}
+                alt={`Foto de ${profile.name}`}
+                width="640"
+                height="800"
+                fetchpriority="high"
+              />
+            </div>
+          ) : (
+            <div className="avatar-ring">
               <div className="avatar avatar-fallback">{profile.initials}</div>
-            )}
+            </div>
+          )}
+          <div className="exp-badge" aria-hidden="true">
+            <strong className="gradient-text">{about.stats[0].value}</strong>
+            <span>
+              años en
+              <br />
+              Odoo ERP
+            </span>
           </div>
           <div className="code-card" aria-hidden="true">
             <div className="code-dots">
@@ -70,6 +87,7 @@ export default function Hero() {
                 {'    '}stack = [<span className="s">'Odoo'</span>, <span className="s">'Python'</span>, <span className="s">'React'</span>]
               </code>
             </pre>
+          </div>
           </div>
         </div>
       </div>
